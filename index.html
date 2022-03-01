@@ -37,9 +37,9 @@
           <button class="btn btn-transparent btn-size-3">Support us</button>
         </div>
       </div>
-      <div class="block-pagination-row">
-        <div class="block-pagination-item">1</div>
-      </div>
+    </div>
+    <div class="block-pagination-row">
+      <div class="block-pagination-item">1</div>
     </div>
     <div class="background"><div class="fade"></div></div>
   </section>
@@ -58,13 +58,47 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.
         </p>
       </div>
-      <div class="block-pagination-row">
-        <div class="block-pagination-item">2</div>
-      </div>
-      <div class="background"><div class="fade-1"></div></div>
-      <div class="fade-2"></div>
     </div>
+    <div class="background"><div class="fade-1"></div></div>
+    <div class="fade-2"></div>
   </section>
+
+  <section class="goals">
+
+  </section>
+
+  <script>
+    let block_pagination = document.querySelector('block-pagination-item');
+
+    // Change block pagination value when user scroll one section which height is 100vh
+    // window.addEventListener('scroll', function() {
+    //   let scroll = window.scrollY;
+    //   let section_height = document.querySelector('.intro').offsetHeight;
+    //   let block_pagination_row = document.querySelector('.block-pagination-row');
+    //   let block_pagination_item = document.querySelectorAll('.block-pagination-item');
+
+    //   if (scroll >= section_height) {
+    //     block_pagination_row.classList.add('active');
+    //     block_pagination_item.forEach(function(item) {
+    //       item.innerHTML = '2';
+    //     });
+    //   } else {
+    //     block_pagination_row.classList.remove('active');
+    //     block_pagination_item.forEach(function(item) {
+    //       item.innerHTML = '1';
+    //     });
+    //   }
+    // });
+    // window.addEventListener('scroll', function() {
+    //     let scroll = window.pageYOffset || document.documentElement.scrollTop;
+    //     let heightOfSection = document.documentElement.clientHeight / 2;
+    //     if (scroll + heightOfSection > heightOfSection) {
+    //         block_pagination.innerHTML = '2';
+    //     } else {
+    //         block_pagination.innerHTML = '1';
+    //     }
+    // });
+  </script>
 
 </body>
 </html>
